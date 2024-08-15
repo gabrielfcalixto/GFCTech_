@@ -13,12 +13,13 @@ nav {
 }
 
 .items a {
-    margin: 0 15px; /* Espaçamento horizontal entre os itens */
+    margin: 0 30px; /* Espaçamento horizontal entre os itens */
     text-decoration: none; /* Remove o sublinhado dos links */
     color: #000; /* Cor do texto dos links */
 }
 .items a:hover{
     color: #007BFF;
+    transition: color 0.5s ease;
 }
 
 .items button {
@@ -40,6 +41,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 50px;
+    padding-left: 150px;
 }
 
 .text-section {
@@ -79,8 +81,201 @@ nav {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+
 }
 
+
+
+/*Section 02*/
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.text-section2 {
+    max-width: 50%;
+}
+
+.text-section2 h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-section2 p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contato {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 266px;
+    height: 62px;
+    
+}
+
+.contato {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 266px;
+    height: 62px;
+    
+}
+
+.contato:hover {
+    background-color: #0056b3;
+}
+
+.image-section2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.services-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 23%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+.service-card:hover {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%;
+    }
+}
+
+
+
+.projetos-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.projetos-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.projetos-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.projetos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projeto-card {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 23%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.projeto-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .projeto-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .projeto-card {
+        width: 100%;
+    }
+}
 
 
 
@@ -95,184 +290,96 @@ nav {
 
 /* Formulário */
 .form {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    margin: 20px auto;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  form {
-    display: inline-block;
-    padding: 2em;
-    border-radius: 2em;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    width: 90%;
-    max-width: 400px;
-    justify-content: space-between;
-  }
-  h4 {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    color: #333;
-    font-weight: 700;
-    text-align: center;
-  }
-  form div {
-    margin-bottom: 1em;
-  }
-  label {
-    display: block;
-    text-align: left;
-    color: #4F4F4F;
-    margin-bottom: 0.5em;
-  }
-  /*texto formulario */
-  input,
-  textarea {
-    font: 1em sans-serif;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    background-color: #DBDBDB;
-    border-radius: 20px;
-    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #333;
-    padding: 0.5em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  input:focus,
-  textarea:focus {
-    border-color: #0400ff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-    outline: none;
-  }
-  input::placeholder,
-  textarea::placeholder {
-    color: #888;
-    font-style: italic;
-  }
-  .iti {
-    width: 100%;
-  }
-  .iti__flag-container {
-    margin-right: 8px;
-  }
-  input#telefone {
-    padding-left: 58px;
-  }
-  /*seletor formulario*/
-  select {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 20px;
-    font: 1em Roboto;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    background-color: #DBDBDB;
-    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #333;
-    padding: 0.5em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  option {
-    font-size: 14px;
-    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding: 10px;
-    margin: 2px;
-    border: 1px solid #ccc;
-  }
-  /*checkbox formulario*/
-  .container {
-    display: block;
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font: 1em Roboto;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  /*seletor formulario*/
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  /*seletor formulario*/
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 15px;
-    width: 15px;
-    background-color: #DBDBDB;
-    border-radius: 50%;
-  }
-  /*seletor formulario*/
-  .container:hover input ~ .checkmark {
-    background-color: #DBDBDB;
-  }
-  /*seletor formulario*/
-  .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  /*seletor formulario*/
-  .checkmark:after {
-    content: "";
-    position: fixed;
-    display: none;
-  }
-  /*seletor formulario*/
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  /*seletor formulario*/
-  .container .checkmark:after {
-    top: 4px;
-    left: 4px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
-  }
-  /*botao formulario*/
-  .button {
-    text-align: center;
-    padding-top: 25px;
-    
-  }
-  button {
-    border-radius: 27px;
-    text-align: center;
-    background-color: rgb(85, 42, 255);
-    color: white;
-    font-weight: bold;
-    border: none;
-    height: 55px;
-    width: 300px;
-    font-size: large;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: inline-block;
+  padding: 2em;
+  border-radius: 2em;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 90%;
+  max-width: 400px;
+  justify-content: space-between;
+}
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+}
+form div {
+  margin-bottom: 1em;
+}
+label {
+  display: block;
+  text-align: left;
+  color: #4F4F4F;
+  margin-bottom: 0.5em;
+}
+/*texto formulario */
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #DBDBDB;
+  border-radius: 20px;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  padding: 0.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+input:focus,
+textarea:focus {
+  border-color: #0400ff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+/*botao formulario*/
+.button {
+  text-align: center;
+  padding-top: 25px;
   
-  
-    padding: 0.5em 1.5em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  button:hover {
-    background-color: rgb(69, 34, 204);
-    transform: translateY(-2px);
-  }
-  button:active {
-    background-color: rgb(54, 27, 163);
-    transform: translateY(0);
-  }
-  
+}
+button {
+  border-radius: 27px;
+  text-align: center;
+  background-color: rgb(85, 42, 255);
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 55px;
+  width: 300px;
+  font-size: large;
+
+
+  padding: 0.5em 1.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+  background-color: rgb(69, 34, 204);
+  transform: translateY(-2px);
+}
+button:active {
+  background-color: rgb(54, 27, 163);
+  transform: translateY(0);
+}
+
