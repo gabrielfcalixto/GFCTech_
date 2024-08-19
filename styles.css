@@ -7,15 +7,19 @@ body {
 
 nav {
     text-align: center;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    padding: 5px;
+    padding: 2px;
+    font-size: 1em;
+
 }
 
 .items a {
     margin: 0 30px; /* Espaçamento horizontal entre os itens */
     text-decoration: none; /* Remove o sublinhado dos links */
     color: #000; /* Cor do texto dos links */
+    font-size: 1.1em;
+
 }
 .items a:hover{
     color: #007BFF;
@@ -24,12 +28,18 @@ nav {
 
 .items button {
     margin-left: 15px; /* Espaçamento adicional para o botão */
-    padding: 8px 16px;
     background-color: #007BFF; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
     border-radius: 12px;
     border: none;
     cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 1.1em;
+    text-align: center;
+
+
+
 }
 
 .items button:hover {
@@ -49,9 +59,10 @@ nav {
 }
 
 .text-section h1 {
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 4em;
+    font-weight: bolder;
     margin-bottom: 20px;
+    line-height: 1.0; 
 }
 
 .text-section p {
@@ -68,8 +79,10 @@ nav {
     border: none;
     font-size: 1.5em;
     cursor: pointer;
-    width: 266px;
-    height: 62px;
+    width: 200px;
+    height: 40px;
+    font-size: 1.1em;
+    text-align: center;
     
 }
 
