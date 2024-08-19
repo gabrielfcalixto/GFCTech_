@@ -3,7 +3,26 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Ou outro peso padrão que você preferir */
+    font-style: normal;
 }
+
+
+.inter-minhaclasse {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Escolha um valor de 100 a 900 */
+    font-style: normal;
+}
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 nav {
     text-align: center;
@@ -19,6 +38,7 @@ nav {
     text-decoration: none; /* Remove o sublinhado dos links */
     color: #000; /* Cor do texto dos links */
     font-size: 1.1em;
+    font-weight: bold;
 
 }
 .items a:hover{
@@ -27,7 +47,7 @@ nav {
 }
 
 .items button {
-    margin-left: 15px; /* Espaçamento adicional para o botão */
+    margin-left: 40px; /* Espaçamento adicional para o botão */
     background-color: #007BFF; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
     border-radius: 12px;
@@ -55,20 +75,22 @@ nav {
 }
 
 .text-section {
-    max-width: 50%;
+    max-width: 48%;
 }
 
 .text-section h1 {
     font-size: 4em;
     font-weight: bolder;
     margin-bottom: 20px;
-    line-height: 1.0; 
+    line-height: 1.2; 
+    text-transform: uppercase;
 }
 
 .text-section p {
     font-size: 1.2em;
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
 }
 
 .contratar {
@@ -83,6 +105,8 @@ nav {
     height: 40px;
     font-size: 1.1em;
     text-align: center;
+    text-transform: uppercase;
+
     
 }
 
@@ -90,11 +114,17 @@ nav {
     background-color: #0056b3;
 }
 
-.image-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+.image-section {
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+}
 
+.image-section img {
+    max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+    height: auto;
+    display: block;
 }
 
 
@@ -105,6 +135,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 50px;
+    padding-left: 150px;
 }
 
 .text-section2 {
@@ -112,9 +143,11 @@ nav {
 }
 
 .text-section2 h1 {
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 4em;
+    font-weight: bolder;
     margin-bottom: 20px;
+    line-height: 1.2; 
+    text-transform: uppercase;
 }
 
 .text-section2 p {
@@ -168,12 +201,16 @@ body {
     text-align: center;
     padding: 50px 20px;
     background-color: #fff;
+    padding: 50px;
+    
 }
 
-.services-section h2 {
+.services-section h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     font-weight: bold;
+
+
 }
 
 .services-section p {
