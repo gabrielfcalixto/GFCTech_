@@ -154,7 +154,13 @@ nav {
     font-size: 1.2em;
     color: #555;
     margin-bottom: 30px;
+  
 }
+.image-section2 img {
+    max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+
+}
+
 
 .contato {
     padding: 10px 20px;
@@ -193,9 +199,6 @@ nav {
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-}
 
 .services-section {
     text-align: center;
@@ -269,8 +272,6 @@ body {
     }
 }
 
-
-
 .projetos-section {
     text-align: center;
     padding: 50px 20px;
@@ -326,13 +327,6 @@ body {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
 
 
 
