@@ -276,9 +276,10 @@ nav {
 }
 
 .projetos-section {
-    text-align: center;
     padding: 50px 20px;
     background-color: #fff;
+    text-align: center;
+
 }
 
 .projetos-section h2 {
@@ -286,12 +287,20 @@ nav {
     margin-bottom: 20px;
     font-weight: bolder;
     text-transform: uppercase;
+    text-align: center;
+
+
 }
 
 .projetos-section p {
     font-size: 1.2em;
     color: #555;
     margin-bottom: 40px;
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+
 }
 
 .projetos-container {
