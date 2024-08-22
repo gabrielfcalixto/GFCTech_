@@ -300,6 +300,8 @@ nav {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-top: 20px;
+    
 
 }
 
@@ -419,6 +421,7 @@ formulario {
     font-size: 1.2em;
   margin-bottom: 1em;
   color: white;
+  text-transform: uppercase;
 }
 h4 {
   font-size: 1.2em;
@@ -434,7 +437,7 @@ label {
   display: block;
   text-align: left;
   color: #ffffff;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.1em;
 }
 /*texto formulario */
 input,
@@ -446,16 +449,16 @@ textarea {
   background-color: #ffffff;
   border-radius: 20px;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #ffffff;
-  padding: 0.5em;
+  color: #000000;
+  padding: 0.6em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 input:focus,
 textarea:focus {
-  border-color: #ffffff;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   outline: none;
+  transform: scale(1.05);/* Aumenta o tamanho do card em 5% ao passar o mouse */
+  background-color: #ffffff;
 }
 input::placeholder,
 textarea::placeholder {
@@ -478,6 +481,7 @@ button {
   height: 55px;
   width: 300px;
   font-size: large;
+  text-transform: uppercase;
 
 
   padding: 0.5em 1.5em;
@@ -490,6 +494,7 @@ button:hover {
   transform: translateY(-2px);
   color: #ffffff;
   text-decoration: wavy;
+  
 }
 button:active {
   background-color: rgb(54, 27, 163);
