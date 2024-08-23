@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $body, $headers)) {
         echo "Mensagem enviada com sucesso!";
     } else {
-        echo "Erro ao enviar a mensagem. Tente novamente mais tarde.";
+        echo "Erro ao enviagggr a mensagem. Tente novamente mais tarde.";
     }
 }
 ?>
