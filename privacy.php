@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Política de Privacidade - GFCTech</title>
+    <style>
+        .privacy-policy {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .privacy-policy h1, .privacy-policy h2 {
+            color: #007BFF;
+        }
+
+        .privacy-policy p {
+            line-height: 1.6;
+        }
+
+        .privacy-policy a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .privacy-policy a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="items">
+            <li>
+                <a href="index.html">Início</a>
+                <a href="index.html">Sobre</a>
+                <a href="index.html">Projetos</a>
+                <a href="index.html">Contato</a>
+                <a href="privacy.php">Política de Privacidade</a>
+            </li>
+        </ul>
+    </nav>
+
+    <article class="privacy-policy">
+        <h1>Política de Privacidade</h1>
+        <p>Essa política de privacidade se refere aos aplicativos:</p>
+        <p><strong>Motivação Diária</strong><br>Criados por GFC Tech / Gabriel F Calixto.</p>
+
+        <h2>Informações Fornecidas pelo Usuário</h2>
+        <p>As informações fornecidas dentro dos recursos dos aplicativos são armazenadas apenas para funcionamento do aplicativo.</p>
+
+        <h2>Coleta Automática de Informações</h2>
+        <p>Informações como estatísticas de instalação e utilização são coletadas para relatórios estratégicos, sem identificação pessoal.</p>
+
+        <h2>Coleta de Informações Não Precisam de Localização em Tempo Real do Dispositivo</h2>
+        <p>Este aplicativo não faz a coleta de informações de localização em tempo real.</p>
+
+        <h2>Acesso de Informações por Terceiros</h2>
+        <p>As informações coletadas estatisticamente podem ser compartilhadas com terceiros em algumas situações:</p>
+        <ul>
+            <li><strong>Exigido por lei:</strong> Quando acreditamos de boa fé que a divulgação é necessária para proteger nossos direitos, proteger sua segurança ou a segurança de outras pessoas, investigar fraudes ou responder a uma solicitação do governo.</li>
+            <li><strong>Com nossos prestadores de serviços:</strong> Empresas que trabalham em nosso nome e que concordam em seguir as regras estabelecidas nesta política de privacidade.</li>
+            <li><strong>Em caso de fusão ou aquisição:</strong> Se GFC Tech / Gabriel F Calixto estiver envolvido em uma fusão, aquisição ou venda de todos ou parte de seus ativos, você será notificado por e-mail e/ou um aviso destacado em nosso site.</li>
+            <li><strong>Para anunciantes e redes de publicidade:</strong> Trabalhamos com empresas de análise e publicidade para entender o uso do aplicativo e oferecer publicidade direcionada.</li>
+        </ul>
+
+        <h2>Coleta de Informações para Publicidade</h2>
+        <p>Trabalhamos com empresas de análise e publicidade que podem coletar informações como o ID do dispositivo e outras informações anônimas para analisar e servir publicidade direcionada.</p>
+
+        <h2>Direitos de Exclusão</h2>
+        <p>Você pode parar toda a coleta de informações desinstalando o aplicativo. Utilize os processos de desinstalação padrão do seu dispositivo móvel ou da loja de aplicativos.</p>
+
+        <h2>Segurança</h2>
+        <p>Estamos preocupados em proteger a confidencialidade de suas informações. Implementamos proteções físicas, eletrônicas e processuais, mas nenhum sistema de segurança pode garantir a proteção completa contra todas as possíveis violações.</p>
+
+        <h2>Alterações e Consentimento</h2>
+        <p>Esta Política de Privacidade pode ser atualizada de tempos em tempos. Toda alteração será publicada aqui. Recomendamos que você consulte esta política regularmente para verificar atualizações.</p>
+
+        <h2>Sobre</h2>
+        <p>Para dúvidas ou mais informações, entre em contato conosco através do formulário de contato em nosso site ou envie um e-mail para <a href="mailto:atendimento@gfctech.com.br">atendimento@gfctech.com.br</a>.</p>
+        <p>GFC TECNOLOGIA DA INFORMAÇÃO<br>Av. Arapongas, 88 Arapongas - PR - Brasil<br>CEP: 86700-050</p>
+    </article>
+
+    <footer>
+        <nav class="footer-nav">
+            <div>
+                <h4>GFCTECH</h4>
+                <p>&copy; 2024. Todos os direitos reservados.</p>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

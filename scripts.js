@@ -1,25 +1,33 @@
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3, // Quantos slides mostrar por vez
-    spaceBetween: 30, // Espaçamento entre slides
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    loop: true, // Ativa loop infinito
-    autoplay: {
-        delay: 3000, // Intervalo entre as mudanças de slide (em milissegundos)
-        disableOnInteraction: false, // Mantém o autoplay após interação do usuário
-    },
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-        },
-        480: {
-            slidesPerView: 1,
-        },
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-});
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+// Auto-slide functionality
+let slideInterval = setInterval(function() {
+    plusSlides(1);
+}, 3000); // 3 seconds interval

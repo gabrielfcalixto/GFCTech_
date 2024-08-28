@@ -9,7 +9,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 		rel="stylesheet">
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="scripts.js"></script>
 	<link rel="stylesheet" href="styles.css">
@@ -22,16 +22,16 @@
 	<nav class="navbar">
 		<ul class="items">
 			<li>
-				<a href="#">Início</a>
-				<a href="#">Sobre</a>
+				<a href="#inicio">Início</a>
+				<a href="#sobre">Sobre</a>
 				<a href="#">Projetos</a>
-				<a href="#">Contato</a>
-				<a href="privacy.html">Politica de privacidade</a>
+				<a href="#contato">Contato</a>
+				<a href="privacy.php">Politica de privacidade</a>
 				<!-- <Button class="baixar">Baixar Portfólio</Button> -->
 			</li>
 		</ul>
 	</nav>
-	<article class="main-content">
+	<article class="main-content" id="inicio"> 
 		<div class="text-section">
 			<h1>Tecnologia da <br> Informação</h1>
 			<p> GFCTech é uma empresa inovadora no setor de tecnologia da informação, dedicada a transformar
@@ -39,7 +39,8 @@
 				software, criação de aplicativos móveis e soluções web, sempre com foco em qualidade,
 				segurança e usabilidade. Nossa missão é ajudar empresas e indivíduos a alcançarem seus
 				objetivos tecnológicos, proporcionando uma experiência digital moderna e personalizada. </p>
-			<button class="contratar">Contratar</button>
+			<button class="contratar"><a href="#contato">Contratar</a></button>
+
 		</div>
 		<div class="image-section">
 			<img src="images/foto1.jpg" alt="Tecnologia">
@@ -49,14 +50,14 @@
 		<div class="image-section2">
 			<img src="images/foto2.jpg" alt="Tecnologia">
 		</div>
-		<div class="text-section2">
+		<div class="text-section2" id="sobre">
 			<h1>Sobre nós</h1>
 			<p> GFCTech é uma empresa inovadora no setor de tecnologia da informação, dedicada a transformar
 				ideias em soluções digitais eficientes e de alto impacto. Especializamos em desenvolvimento de
 				software, criação de aplicativos móveis e soluções web, sempre com foco em qualidade,
 				segurança e usabilidade. Nossa missão é ajudar empresas e indivíduos a alcançarem seus
 				objetivos tecnológicos, proporcionando uma experiência digital moderna e personalizada. </p>
-			<Button class="contato"> Contato</Button>
+			<Button class="contato"> <a href="#contato">Contato</a></Button>
 
 		</div>
 	</article>
@@ -100,36 +101,44 @@
 		</div>
 	</section>
 
-	<section class="projetos-section">
+	<!-- <section class="projetos-section">
 		<h2>Projetos</h2>
 		<p>Cada projeto é um passo em direção à inovação. Na GFCTECH, trabalhamos com dedicação para entregar soluções
 			tecnológicas que realmente fazem a diferença. Confira alguns dos nossos projetos que destacam nosso
 			compromisso com a qualidade e a excelência:</p>
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide projeto-card">
-					<h3>Projeto 1</h3>
-					<p>Descrição do Projeto 1</p>
-				</div>
-				<div class="swiper-slide projeto-card">
-					<h3>Projeto 2</h3>
-					<p>Descrição do Projeto 2</p>
-				</div>
-				<div class="swiper-slide projeto-card">
-					<h3>Projeto 3</h3>
-					<p>Descrição do Projeto 3</p>
-				</div>
-				<!-- Adicione mais slides conforme necessário -->
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="biker-8951680_1280.jpg" style="width:100%">
+				<div class="text">Caption Text</div>
 			</div>
-			<!-- Controles de navegação -->
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-			<!-- Paginação -->
-			<div class="swiper-pagination"></div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="car-1300629_1280.png" style="width:100%">
+				<div class="text">Caption Two</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="crime-1862312_1280.jpg" style="width:100%">
+				<div class="text">Caption Three</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</div>
-	</section>
-	
-	<article class="contato-content">
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+	</section> -->
+
+	<article class="contato-content" id="contato">
 		<div class="text-section5">
 
 			<div class="contato-class">
