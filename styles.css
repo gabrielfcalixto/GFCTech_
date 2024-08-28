@@ -9,8 +9,6 @@ body {
     /* Ou outro peso padrão que você preferir */
     font-style: normal;
 }
-
-
 .inter-minhaclasse {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -18,24 +16,34 @@ body {
     /* Escolha um valor de 100 a 900 */
     font-style: normal;
 }
-
 .inter-normal {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-
-
 nav {
     text-align: center;
     align-items: end;
     justify-content: center;
-    padding:10px;
+    padding: 10px;
     font-size: 1.2em;
 
 }
+.items{
+    padding: 5px;
+    display: grid;
 
+
+}
+.items img{
+
+    width: 100%;
+    margin-right: 100px;;
+    height: auto;
+    max-width: 150px;
+    object-fit: cover;
+}
 .items a {
     margin: 0 30px;
     text-decoration: none;
@@ -44,7 +52,6 @@ nav {
     font-weight: bold;
     position: relative;
 }
-
 .items a::after {
     content: '';
     position: absolute;
@@ -53,38 +60,11 @@ nav {
     background-color: #007BFF;
     left: 0;
     bottom: -5px;
-    transition: width 0.3s ease;
+    transition: width 0.2s ease;
 }
-
 .items a:hover::after {
     width: 100%;
 }
-
-
-.items button {
-    margin-left: 40px;
-    /* Espaçamento adicional para o botão */
-    background-color: #007BFF;
-    /* Cor de fundo do botão */
-    color: white;
-    /* Cor do texto do botão */
-    border-radius: 12px;
-    border: none;
-    cursor: pointer;
-    width: 200px;
-    height: 40px;
-    font-size: 1.1em;
-    text-align: center;
-
-
-
-}
-
-.items button:hover {
-    background-color: #0056b3;
-    /* Cor de fundo do botão ao passar o mouse */
-}
-
 .main-content {
     display: flex;
     align-items: center;
@@ -93,13 +73,12 @@ nav {
     padding-left: 150px;
     padding-right: 0px;
     padding-top: 100px;
+    background-color: #e6e3e3;
 
 }
-
 .text-section {
     max-width: 48%;
 }
-
 .text-section h1 {
     font-size: 4em;
     font-weight: bolder;
@@ -107,51 +86,39 @@ nav {
     line-height: 1.2;
     text-transform: uppercase;
 }
-
 .text-section p {
-    font-size: 1.4em;
-    color: #555;
+    font-size: 1.5em;
+    color: #464646;
     margin-bottom: 20px;
 
 }
-
-/* Estilo para o botão 'Contratar' */
 .contratar {
-    padding: 12px 20px;
     background-color: #007BFF;
     color: white;
-    border-radius: 12px;
+    border-radius: 25px;
     border: none;
-    font-size: 1.2em; /* Definido aqui para evitar duplicação */
+    font-size: 1.2em;
+    /* Definido aqui para evitar duplicação */
     cursor: pointer;
-    text-align: center;
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 50px;
 }
-
-/* Efeito ao passar o mouse sobre o botão */
 .contratar:hover {
-    background-color: #0056b3;
+    background-color: #009b27;
 }
-
-/* Estilo para links dentro do botão (se necessário) */
 .contratar a {
     text-decoration: none;
-    color: white; /* Cor do texto do botão */
-    display: inline-block;
-    width: 100%; /* Faz o link ocupar toda a largura do botão */
-    height: 100%; /* Faz o link ocupar toda a altura do botão */
-    line-height: 15px; /* Alinha o texto verticalmente no centro */
-
+    color: white;
+    width: 100%;
+    height: 100%;
 }
 
 
 .image-section {
-
     margin: 0;
     padding: 0;
-    padding-top: 60px;
-    padding-right: 50px;
+    padding-top: 30px;
+    padding-right: 100px;
 }
 
 .image-section img {
@@ -234,7 +201,8 @@ nav {
     color: white;
     border-radius: 12px;
     border: none;
-    font-size: 1.2em; /* Definido aqui para evitar duplicação */
+    font-size: 1.2em;
+    /* Definido aqui para evitar duplicação */
     cursor: pointer;
     text-align: center;
     width: 200px;
@@ -245,20 +213,25 @@ nav {
 .contato:hover {
     background-color: #0056b3;
 }
-.contato a{
-text-decoration: none;
-    color: white; /* Cor do texto do botão */
+
+.contato a {
+    text-decoration: none;
+    color: white;
+    /* Cor do texto do botão */
     display: inline-block;
-    width: 100%; /* Faz o link ocupar toda a largura do botão */
-    height: 100%; /* Faz o link ocupar toda a altura do botão */
-    line-height: 15px; /* Alinha o texto verticalmente no centro */
+    width: 100%;
+    /* Faz o link ocupar toda a largura do botão */
+    height: 100%;
+    /* Faz o link ocupar toda a altura do botão */
+    line-height: 15px;
+    /* Alinha o texto verticalmente no centro */
 }
 
 /*services*/
 .services-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: #e0e0e0;
     padding: 50px;
 
 }
@@ -274,7 +247,7 @@ text-decoration: none;
 
 .services-section p {
     font-size: 1.6em;
-    color: #555;
+    color: #303030;
     margin-bottom: 40px;
 }
 
@@ -286,7 +259,7 @@ text-decoration: none;
 }
 
 .service-card {
-    background-color: #e0e0e0;
+    background-color: #528f69;
     border-radius: 15px;
     padding: 20px;
     width: 18%;
@@ -334,7 +307,8 @@ text-decoration: none;
 
 .projetos-section {
     padding: 300px;
-    background-color: #f9f9f9; /* Fundo leve para destacar o carrossel */
+    background-color: #f9f9f9;
+    /* Fundo leve para destacar o carrossel */
     text-align: center;
 }
 
@@ -343,35 +317,39 @@ text-decoration: none;
     margin-bottom: 20px;
     font-weight: bolder;
     text-transform: uppercase;
-    color: #333; /* Cor do texto */
+    color: #333;
+    /* Cor do texto */
 }
 
 .projetos-section p {
     font-size: 1.2em;
-    color: #666; /* Texto mais suave */
+    color: #666;
+    /* Texto mais suave */
     margin-bottom: 40px;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 * {
     box-sizing: border-box;
-  }
-  
-  /* Slideshow container */
-  .slideshow-container {
+}
+
+/* Slideshow container */
+.slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+
+/* Hide the images by default */
+.mySlides {
     display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -384,21 +362,22 @@ text-decoration: none;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -406,19 +385,19 @@ text-decoration: none;
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -427,23 +406,29 @@ text-decoration: none;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
+}
+
+/* Fading animation */
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 
 
 .contato-content {
@@ -608,4 +593,80 @@ button:hover {
 button:active {
     background-color: rgb(54, 27, 163);
     transform: translateY(0);
+}
+
+.footer-nav{
+
+background-color: #d6d6d6;
+
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text-section,
+    .image-section {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .text-section h1 {
+        font-size: 2.5em;
+    }
+
+    .text-section p {
+        font-size: 1em;
+    }
+
+    .image-section img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-section h1 {
+        font-size: 2em;
+    }
+
+    .text-section p {
+        font-size: 0.9em;
+    }
+
+    .image-section img {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contato-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-section5 {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contato-class {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 }
