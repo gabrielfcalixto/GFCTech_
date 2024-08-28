@@ -5,7 +5,8 @@ body {
     line-height: 1.6;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Ou outro peso padrão que você preferir */
+    font-weight: 400;
+    /* Ou outro peso padrão que você preferir */
     font-style: normal;
 }
 
@@ -13,9 +14,11 @@ body {
 .inter-minhaclasse {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Escolha um valor de 100 a 900 */
+    font-weight: 400;
+    /* Escolha um valor de 100 a 900 */
     font-style: normal;
 }
+
 .inter-normal {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -28,28 +31,43 @@ nav {
     text-align: center;
     align-items: end;
     justify-content: center;
-    padding: 2px;
-    font-size: 1em;
+    padding:10px;
+    font-size: 1.2em;
 
 }
 
 .items a {
-    margin: 0 30px; /* Espaçamento horizontal entre os itens */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #000; /* Cor do texto dos links */
-    font-size: 1.1em;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
     font-weight: bold;
+    position: relative;
+}
 
+.items a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007BFF;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
 }
-.items a:hover{
-    color: #007BFF;
-    transition: color 0.5s ease;
+
+.items a:hover::after {
+    width: 100%;
 }
+
 
 .items button {
-    margin-left: 40px; /* Espaçamento adicional para o botão */
-    background-color: #007BFF; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
+    margin-left: 40px;
+    /* Espaçamento adicional para o botão */
+    background-color: #007BFF;
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto do botão */
     border-radius: 12px;
     border: none;
     cursor: pointer;
@@ -63,7 +81,8 @@ nav {
 }
 
 .items button:hover {
-    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #0056b3;
+    /* Cor de fundo do botão ao passar o mouse */
 }
 
 .main-content {
@@ -85,12 +104,12 @@ nav {
     font-size: 4em;
     font-weight: bolder;
     margin-bottom: 20px;
-    line-height: 1.2; 
+    line-height: 1.2;
     text-transform: uppercase;
 }
 
 .text-section p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #555;
     margin-bottom: 20px;
 
@@ -110,7 +129,7 @@ nav {
     text-align: center;
     text-transform: uppercase;
 
-    
+
 }
 
 .contratar:hover {
@@ -118,17 +137,27 @@ nav {
 }
 
 .image-section {
-    
+
     margin: 0;
     padding: 0;
     padding-top: 60px;
+    padding-right: 50px;
 }
 
 .image-section img {
-    max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+    max-width: 100%;
     height: auto;
     display: block;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+
 }
+
+.image-section img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 
 /*sobre content */
 .sobre-content {
@@ -137,6 +166,7 @@ nav {
     justify-content: space-between;
     padding: 100px;
     padding-left: 0px;
+    padding-right: 100px;
 }
 
 .text-section2 {
@@ -148,30 +178,41 @@ nav {
 .text-section2 h1 {
     font-size: 4em;
     font-weight: bolder;
-    line-height: 1.2; 
+    line-height: 1.2;
     text-transform: uppercase;
     text-align: right;
 }
 
 .text-section2 p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #555;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     text-align: right;
 
 }
 
 .image-section2 {
-    
+
     margin: 0;
     padding: 0;
     padding-top: 60px;
+    border-radius: 12px;
+    padding-left: 50px;
+
 }
 
 .image-section2 img {
-    max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+    max-width: 100%;
     height: auto;
     display: block;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+
+}
+
+.image-section2 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -188,7 +229,7 @@ nav {
     height: 40px;
     text-align: center;
     text-transform: uppercase;
-    
+
 }
 
 .contato:hover {
@@ -202,7 +243,7 @@ nav {
     padding: 50px 20px;
     background-color: #fff;
     padding: 50px;
-    
+
 }
 
 .services-section h1 {
@@ -215,7 +256,7 @@ nav {
 }
 
 .services-section p {
-    font-size: 1.2em;
+    font-size: 1.6em;
     color: #555;
     margin-bottom: 40px;
 }
@@ -242,7 +283,8 @@ nav {
     font-size: 1.5em;
     margin-bottom: 10px;
     font-weight: bold;
-    margin-top: 20px; /* Adiciona espaçamento acima do texto */
+    margin-top: 20px;
+    /* Adiciona espaçamento acima do texto */
 
 }
 
@@ -256,6 +298,8 @@ nav {
     background-color: #007BFF;
     color: #fff;
     cursor: pointer;
+    transform: scale(1.10);
+
 }
 
 .service-card:hover h3,
@@ -301,7 +345,7 @@ nav {
     margin: 0 auto;
     padding: 0 20px;
     padding-top: 20px;
-    
+
 
 }
 
@@ -319,12 +363,13 @@ nav {
     width: 20%;
     height: 500px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: trasnform 0.3s,   background-color 0.3s, color 0.3s;
+    transition: trasnform 0.3s, background-color 0.3s, color 0.3s;
     text-align: left;
 }
 
-.projeto-card:hover{
-    transform: scale(1.05);/* Aumenta o tamanho do card em 5% ao passar o mouse */
+.projeto-card:hover {
+    transform: scale(1.05);
+    /* Aumenta o tamanho do card em 5% ao passar o mouse */
     background-color: #d0d0d0;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
@@ -373,23 +418,26 @@ nav {
 .text-section5 h2 {
     font-size: 3em;
     font-weight: bolder;
-    line-height: 1.2; 
+    line-height: 1.2;
     text-transform: uppercase;
     text-align: right;
 }
 
 .contato-class {
     display: flex;
-    align-items: flex-start; /* Alinha o h1 e o formulário ao topo */
-    gap: 180px; /* Espaço entre o h1 e o formulário */
+    align-items: flex-start;
+    /* Alinha o h1 e o formulário ao topo */
+    gap: 180px;
+    /* Espaço entre o h1 e o formulário */
 }
 
-.contato-class h1{
+.contato-class h1 {
 
     font-size: 4.5em;
     text-transform: uppercase;
-    line-height: 1.2; 
-    margin-top: 80px; /* Remove margem padrão do h1 */
+    line-height: 1.2;
+    margin-top: 80px;
+    /* Remove margem padrão do h1 */
 
 
 
@@ -400,104 +448,117 @@ nav {
 
 /* Formulário */
 .formulario {
-  background-color:#0B3FF6;
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  margin: 20px auto;
-  width: 300px;
-  border-radius: 20.84px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #0B3FF6;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 20.84px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
 formulario {
-  display: inline-block;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  width: 50%;
-  max-width: 400px;
-  justify-content: space-between;
+    display: inline-block;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 50%;
+    max-width: 400px;
+    justify-content: space-between;
 }
-.formulario h4{
+
+.formulario h4 {
     font-size: 1.2em;
-  margin-bottom: 1em;
-  color: white;
-  text-transform: uppercase;
+    margin-bottom: 1em;
+    color: white;
+    text-transform: uppercase;
 }
+
 h4 {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-  color: #000000; /*texto GFCTECH   */
-  font-weight: bold;
-  text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #000000;
+    /*texto GFCTECH   */
+    font-weight: bold;
+    text-align: center;
 }
+
 formulario div {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
+
 label {
-  display: block;
-  text-align: left;
-  color: #ffffff;
-  margin-bottom: 0.1em;
+    display: block;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 0.1em;
 }
+
 /*texto formulario */
 input,
 textarea {
-  font: 1em sans-serif;
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  background-color: #ffffff;
-  border-radius: 20px;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #000000;
-  padding: 0.6em;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+    font: 1em sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000000;
+    padding: 0.6em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
+
 input:focus,
 textarea:focus {
-  outline: none;
-  transform: scale(1.05);/* Aumenta o tamanho do card em 5% ao passar o mouse */
-  background-color: #ffffff;
+    outline: none;
+    transform: scale(1.05);
+    /* Aumenta o tamanho do card em 5% ao passar o mouse */
+    background-color: #ffffff;
 }
+
 input::placeholder,
 textarea::placeholder {
-  color: #000000;
-  font-style: italic;
+    color: #000000;
+    font-style: italic;
 }
+
 /*botao formulario*/
 .button {
-  text-align: center;
-  padding-top: 25px;
-  
+    text-align: center;
+    padding-top: 25px;
+
 }
+
 button {
-  border-radius: 27px;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  border: none;
-  height: 55px;
-  width: 300px;
-  font-size: large;
-  text-transform: uppercase;
+    border-radius: 27px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    height: 55px;
+    width: 300px;
+    font-size: large;
+    text-transform: uppercase;
 
 
-  padding: 0.5em 1.5em;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0.5em 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 button:hover {
-  background-color: rgb(48, 255, 30);
-  transform: translateY(-2px);
-  color: #ffffff;
-  text-decoration: wavy;
-  
-}
-button:active {
-  background-color: rgb(54, 27, 163);
-  transform: translateY(0);
+    background-color: rgb(48, 255, 30);
+    transform: translateY(-2px);
+    color: #ffffff;
+    text-decoration: wavy;
+
 }
 
+button:active {
+    background-color: rgb(54, 27, 163);
+    transform: translateY(0);
+}
