@@ -9,11 +9,16 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 		rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="styles.css">
+
+
 	<title>GFCTech</title>
 </head>
 
 <body>
-	<link rel="stylesheet" href="styles.css">
 	<nav class="navbar">
 		<ul class="items">
 			<li>
@@ -100,21 +105,30 @@
 		<p>Cada projeto é um passo em direção à inovação. Na GFCTECH, trabalhamos com dedicação para entregar soluções
 			tecnológicas que realmente fazem a diferença. Confira alguns dos nossos projetos que destacam nosso
 			compromisso com a qualidade e a excelência:</p>
-		<div class="projetos-container">
-			<div class="projeto-card">
-
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide projeto-card">
+					<h3>Projeto 1</h3>
+					<p>Descrição do Projeto 1</p>
+				</div>
+				<div class="swiper-slide projeto-card">
+					<h3>Projeto 2</h3>
+					<p>Descrição do Projeto 2</p>
+				</div>
+				<div class="swiper-slide projeto-card">
+					<h3>Projeto 3</h3>
+					<p>Descrição do Projeto 3</p>
+				</div>
+				<!-- Adicione mais slides conforme necessário -->
 			</div>
-			<div class="projeto-card">
-
-			</div>
-			<div class="projeto-card">
-
-			</div>
-			<div class="projeto-card">
-
-			</div>
+			<!-- Controles de navegação -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<!-- Paginação -->
+			<div class="swiper-pagination"></div>
 		</div>
 	</section>
+	
 	<article class="contato-content">
 		<div class="text-section5">
 
@@ -137,7 +151,7 @@
 						</div>
 						<div>
 							<label for="mensagem">Mensagem</label>
-							<input type="text=" id="mensagem" name="mensagem" />
+							<input type="text" id="mensagem" name="mensagem" />
 						</div>
 						<div class="button">
 							<button type="submit">Enviar</button>
@@ -156,5 +170,6 @@
 		</nav>
 	</footer>
 </body>
+
 
 </html>
