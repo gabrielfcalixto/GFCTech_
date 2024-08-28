@@ -231,7 +231,7 @@ nav {
 .services-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #e0e0e0;
+    background-color: #ffffff;
     padding: 50px;
 
 }
@@ -259,7 +259,7 @@ nav {
 }
 
 .service-card {
-    background-color: #528f69;
+    background-color: #dadada;
     border-radius: 15px;
     padding: 20px;
     width: 18%;
