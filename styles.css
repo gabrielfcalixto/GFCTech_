@@ -48,8 +48,8 @@ nav {
     margin: 0 30px;
     text-decoration: none;
     color: #000;
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: ;
     position: relative;
 }
 .items a::after {
@@ -72,8 +72,8 @@ nav {
     padding: 50px;
     padding-left: 150px;
     padding-right: 0px;
-    padding-top: 100px;
-    background-color: #e6e3e3;
+    padding-top:60px;
+    background-color: #ffffff;
 
 }
 .text-section {
@@ -87,7 +87,7 @@ nav {
     text-transform: uppercase;
 }
 .text-section p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #464646;
     margin-bottom: 20px;
 
@@ -131,9 +131,7 @@ nav {
 
 }
 
-.image-section img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
+
 
 
 /*sobre content */
@@ -161,7 +159,7 @@ nav {
 }
 
 .text-section2 p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #555;
     margin-bottom: 26px;
     text-align: right;
@@ -238,7 +236,7 @@ nav {
 }
 
 .services-section p {
-    font-size: 1.6em;
+    font-size: 1.3em;
     color: #303030;
     margin-bottom: 40px;
 }
@@ -251,7 +249,7 @@ nav {
 }
 
 .service-card {
-    background-color: #dadada;
+    background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
     width: 18%;
@@ -299,7 +297,7 @@ nav {
 
 .projetos-section {
     padding: 300px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     /* Fundo leve para destacar o carrossel */
     text-align: center;
 }
