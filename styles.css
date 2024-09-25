@@ -524,13 +524,13 @@ width: 100%;
 }
 
 @media (max-width: 768px) {
-    .main-content, .contato-content, .services-container {
+    .main-content, .sobre-content, .contato-content, .services-container {
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
 
-    .text-section, .image-section, .service-card, .text-section5, .contato-class {
+    .text-section, .image-section, .text-section2, .image-section2, .service-card, .text-section5, .contato-class {
         max-width: 100%;
         text-align: center;
         padding: 0;
